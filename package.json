@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/PawanKantTiwari/Practice/issues"
   },
-  "homepage": "https://github.com/PawanKantTiwari/Practice#readme"
+  "homepage": "https://github.com/PawanKantTiwari/Practice#readme",
+  "dependencies": {
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.1"
+  },
+  "devDependencies": {}
 }
