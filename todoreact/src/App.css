@@ -1,0 +1,11 @@
+.todo{
+    border: solid 1px black;
+}
+
+.delete-butto{
+    color: Red;
+} 
+
+*{
+    background-color: red;
+}

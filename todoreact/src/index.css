@@ -1,0 +1,19 @@
+.todo{
+  border: solid 1px black;
+  width: 30vw;
+ display: flex; 
+ justify-content: space-between;
+ margin: 2%;
+}
+
+.content{
+  margin: 2%;
+}
+.delete-button{
+  background-color: yellow;
+  margin: 2%;
+} 
+
+*{
+  background-color: lightcyan;
+}
