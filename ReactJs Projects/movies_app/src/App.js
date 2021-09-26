@@ -7,7 +7,7 @@ import axios from "axios"
 class App extends React.Component {
   state = {
     MoviesData: [],
-    CurrentMovieName: "HULK"
+    CurrentMovieName: "avenger"
   }
 
 
@@ -22,9 +22,23 @@ class App extends React.Component {
       })
     }
 
+    setMoviesOnSearch = async (toSearch) =>{
+    let data = await axios.get(API_URL + '/search/movie', { params: { api_key: API_KEY, query: toSearch, page: 1 } })
+
+    let MoviesData = data.data.results;
+    this.setState({
+      MoviesData : MoviesData,
+      CurrentMovieName : toSearch
+    })
+  }
+
+
+
   render() {
+
+    let setMoviesOnSearch = this.setMoviesOnSearch;
     return <React.Fragment>
-      <Header></Header>
+      <Header setMoviesOnSearch = {setMoviesOnSearch}></Header>
       <Movies MoviesData={this.state.MoviesData}></Movies>
     </React.Fragment>;
   }

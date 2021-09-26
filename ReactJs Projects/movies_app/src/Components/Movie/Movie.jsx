@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { IMAGE_BASE_URL } from '../../API/secret';
+import "./Movie.css"
 class Movie extends React.Component {
     render() {
         // let posterPath = IMAGE_BASE_URL + this.props.Movie["poster_path"]
@@ -10,11 +11,11 @@ class Movie extends React.Component {
                     <img src={IMAGE_BASE_URL + poster_path} alt="something went wrong" />
                 </div>
                 <div className="title">
-                    <h1>{title}</h1>
+                    {title}
                 </div>
 
                 <div className="rating">
-                    <h1>{vote_average}</h1>
+                    {vote_average}
                 </div>
             </div>
 
