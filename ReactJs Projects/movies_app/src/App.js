@@ -7,7 +7,7 @@ import axios from "axios"
 class App extends React.Component {
   state = {
     MoviesData: [],
-    CurrentMovieName: "avenger"
+    CurrentMovieName: "avengers"
   }
 
 
@@ -37,10 +37,10 @@ class App extends React.Component {
   render() {
 
     let setMoviesOnSearch = this.setMoviesOnSearch;
-    return <React.Fragment>
+    return <div className="total">
       <Header setMoviesOnSearch = {setMoviesOnSearch}></Header>
       <Movies MoviesData={this.state.MoviesData}></Movies>
-    </React.Fragment>;
+    </div>;
   }
 }
 

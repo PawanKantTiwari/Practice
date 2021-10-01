@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    background-color: #FF0000;
+
+    align-items: center;
+    justify-content: center;
+}
+ input{
+     width: 40%;
+     
+ }

@@ -1,21 +1,43 @@
 .MovieData{
     display: flex;
-    height: 40vh;
-    width: 17vw;
+    flex-direction: column;
+    height: 40%;
+    width: 15%;
+
+    justify-content: space-around;
+
+    border: 2px blue solid;
 }
 
 .poster{
-    
+    /* display: block; */
+    border: 2px solid red;
+    height: 90%;
+    width: 100%;
 }
 
-.poster img{
+img{
+    height: 100%;
+    width: 100%;
+}
 
+
+.movieDetails{
+    height: 10%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .title{
-
+    width: 50%;
+    font-size: 0.5rem;
+    color: white;
 }
 
 .rating{
-
+    width: 50%;
+    font-size: 0.5rem;
+    color: white;
 }

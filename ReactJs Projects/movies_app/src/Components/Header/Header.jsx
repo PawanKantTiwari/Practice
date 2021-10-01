@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./Header.css"
 class Header extends React.Component {
     state = {
         toSearch : ""
@@ -22,7 +23,7 @@ class Header extends React.Component {
     render() { 
          let handleOnChange = this.handleOnChange;
          let handelKeyPress = this.handelKeyPress;
-        return <div>
+        return <div className = "header">
             <input type="text" value = {this.state.toSearch} placeholder = "search" onChange = {handleOnChange} onKeyPress = {handelKeyPress}/>
         </div>;
     }
